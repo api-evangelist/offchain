@@ -1,0 +1,45 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  https://github.com/OffchainLabs and the public npm registry
+  (https://registry.npmjs.org). Offchain (formerly Offchain Labs) ships its
+  developer libraries under the @arbitrum npm scope; each entry below was
+  confirmed live against the registry (latest version, repository, and
+  description) at fetch time. npm's web front-end returns 403 to automated
+  clients, so versions were confirmed via registry.npmjs.org.
+description: >-
+  First-party client libraries for building on Arbitrum, the layer-2 chain
+  built by Offchain. These are TypeScript/Solidity libraries for interacting
+  with Arbitrum chains, deploying the Nitro rollup precompiles/contracts, and
+  launching custom Arbitrum (Orbit) chains. There is no single hosted REST API;
+  the platform surface is Ethereum-compatible JSON-RPC plus these SDKs.
+packages:
+  - language: typescript
+    registry: npm
+    name: "@arbitrum/sdk"
+    version: 4.1.0
+    url: https://www.npmjs.com/package/@arbitrum/sdk
+    source: https://github.com/OffchainLabs/arbitrum-sdk
+    install: npm install @arbitrum/sdk
+    description: Typescript library for client-side interactions with Arbitrum.
+    official: true
+  - language: solidity
+    registry: npm
+    name: "@arbitrum/nitro-contracts"
+    version: 3.2.0
+    url: https://www.npmjs.com/package/@arbitrum/nitro-contracts
+    source: https://github.com/OffchainLabs/nitro-contracts
+    install: npm install @arbitrum/nitro-contracts
+    description: Layer 2 precompiles and rollup contracts for Arbitrum Nitro.
+    official: true
+  - language: typescript
+    registry: npm
+    name: "@arbitrum/chain-sdk"
+    version: 0.27.0
+    url: https://www.npmjs.com/package/@arbitrum/chain-sdk
+    source: https://github.com/OffchainLabs/arbitrum-chain-sdk
+    install: npm install @arbitrum/chain-sdk
+    description: >-
+      TypeScript SDK for configuring and deploying your own Arbitrum chain
+      (formerly published as @arbitrum/orbit-sdk, still available at 0.26.0).
+    official: true
